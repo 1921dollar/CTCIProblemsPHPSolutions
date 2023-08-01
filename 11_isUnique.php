@@ -4,8 +4,9 @@
         $s = str_split($s);
         sort($s, SORT_STRING);
         for ($i = 0; $i < count($s) - 1; $i++) {
-            if ($s[$i] === $s[$i + 1])
+            if ($s[$i] === $s[$i + 1]) {
                 return false;
+            }
         }
 
         return true;
